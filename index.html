@@ -1,157 +1,184 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohit Kumar | Java Full Stack Developer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Mohit Kumar | Java Full Stack Engineer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Mohit Kumar – Java Full Stack Engineer with 2.5+ years experience in Spring Boot, Microservices, AWS, Kafka, Spark."/>
+  <meta name="author" content="Mohit Kumar"/>
+
+  <!-- Fonts & Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #0f172a;
-      color: #e2e8f0;
-      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Inter', sans-serif;
+      background:#0f172a;
+      color:#e5e7eb;
+      line-height:1.6;
     }
+    a { color:#38bdf8; text-decoration:none; }
+
     header {
-      background: linear-gradient(to right, #1e3a8a, #1e40af);
-      padding: 2rem;
-      text-align: center;
-      color: #ffffff;
+      text-align:center;
+      padding:4rem 1.5rem;
+      background:linear-gradient(135deg,#1e3a8a,#0ea5e9);
     }
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+    header h1 { font-size:3rem; margin-bottom:0.3rem }
+    header p { font-size:1.1rem; }
+
+    .actions a {
+      display:inline-block;
+      margin:0.8rem;
+      padding:0.7rem 1.6rem;
+      background:#0ea5e9;
+      color:#fff;
+      border-radius:30px;
+      font-weight:600;
+      transition:.3s;
     }
-    h2 {
-      color: #38bdf8;
-    }
+    .actions a:hover { background:#38bdf8; transform:translateY(-2px); }
+
     section {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
+      max-width:1100px;
+      margin:auto;
+      padding:3rem 1.5rem;
     }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
+    h2 { text-align:center; color:#38bdf8; margin-bottom:2rem }
+
+    .card {
+      background:#1e293b;
+      padding:1.5rem;
+      border-radius:16px;
+      margin-bottom:1.5rem;
     }
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1.2rem;
     }
-    .project {
-      background: #1e293b;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-left: 4px solid #38bdf8;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s;
-      animation: fadeInUp 0.6s ease forwards;
-      opacity: 0;
-    }
-    .project:hover {
-      transform: translateY(-5px);
-      background-color: #334155;
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .toggle-theme {
-      position: fixed;
-      top: 10px;
-      right: 20px;
-      cursor: pointer;
-      font-size: 1.5rem;
-      color: #facc15;
-    }
-    .light-mode {
-      background-color: #f8fafc;
-      color: #0f172a;
-    }
-    .light-mode header {
-      background: linear-gradient(to right, #3b82f6, #60a5fa);
-      color: #fff;
-    }
-    .light-mode .project {
-      background-color: #e2e8f0;
-      color: #0f172a;
-    }
-    .light-mode a {
-      color: #2563eb;
+
+    ul { padding-left:1.2rem }
+
+    footer {
+      text-align:center;
+      padding:1.2rem;
+      opacity:.6;
+      font-size:0.85rem;
     }
   </style>
 </head>
+
 <body>
-  <div class="toggle-theme" onclick="toggleTheme()">
-    <i class="fas fa-moon"></i>
+
+<header>
+  <h1>Mohit Kumar</h1>
+  <p>Java Full Stack Engineer | AWS | Microservices | Distributed Systems</p>
+
+  <div class="actions">
+    <a href="resume/Mohit_Kumar_Java_FullStack_Resume.pdf" download>
+      <i class="fas fa-download"></i> Download Resume
+    </a>
+    <a href="https://github.com/Mohit-Java-Caps" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/mohit-kumar-dev" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    Java Full Stack Engineer with <b>2.5+ years of experience</b> designing and delivering
+    <b>cloud-native, enterprise-scale applications</b>.
+    Proven expertise in <b>Spring Boot, Microservices, AWS, Kafka, and Spark</b>.
+    Strong record of performance optimization, cost reduction, and high-throughput data processing.
+  </div>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+
+  <div class="card">
+    <h3>Cognizant Technology Solutions — Associate Full Stack Engineer</h3>
+    <p><i>Sep 2023 – Present | Client: NextEra Energy (USA)</i></p>
+    <ul>
+      <li>Designed enterprise-grade backend services using Java, Spring Boot, and microservices architecture.</li>
+      <li>Built event-driven pipelines with AWS S3, SNS, SQS, ECS for automated data ingestion.</li>
+      <li>Processed <b>8,300+ files/day</b> using Apache Spark with end-to-end execution in <b>1h 15m</b>.</li>
+      <li>Improved database query performance by <b>25%</b> and reduced AWS costs by <b>15%</b>.</li>
+    </ul>
   </div>
 
-  <header>
-    <h1>Mohit Kumar</h1>
-    <p>Java Full Stack Developer | 4⭐ LeetCode (800+ Problems) | AWS Certified</p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Passionate Java Full Stack Developer with hands-on experience in building scalable, cloud-native applications. Skilled in Java,
-      Spring Boot, Angular, PostgreSQL, AWS, Apache Kafka & Spark.
-    </p>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3><i class="fas fa-chart-line"></i> Real-Time Product Analytics Pipeline</h3>
-      <p>A real-time data analytics pipeline for tracking product interactions. Built using Apache Kafka, Spark Streaming, and PostgreSQL with dashboards on Grafana. Helps generate real-time business insights and customer behavior analysis.</p>
-    </div>
-    <div class="project">
-      <h3><i class="fas fa-file-alt"></i> Resume Insights App</h3>
-      <p>A smart resume insights and job tracker tool that analyzes your resume, suggests improvements, and helps manage job applications. Developed using Spring Boot, Angular, and integrated with OpenAI for smart suggestions.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Certifications & Achievements</h2>
+  <div class="card">
+    <h3>Cognizant Technology Solutions — Java Full Stack Engineer Trainee</h3>
+    <p><i>Feb 2023 – Aug 2023</i></p>
     <ul>
-      <li><i class="fas fa-certificate"></i> GitHub Copilot Certified</li>
-      <li><i class="fas fa-certificate"></i> AWS Cloud Practitioner</li>
-      <li><i class="fas fa-certificate"></i> Java Full Stack - Cognizant</li>
-      <li><i class="fas fa-star"></i> 4-Star LeetCode | 800+ Problems Solved</li>
+      <li>Developed REST APIs and microservices using Spring Boot.</li>
+      <li>Built Angular UI components and CI/CD pipelines.</li>
+      <li>Reduced deployment time by <b>30%</b> using Jenkins & GitHub Actions.</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <a href="mailto:mohit02012001@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-    <a href="https://www.linkedin.com/in/mohit-kumar-a11340214" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://leetcode.com/u/Mohit_72/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
-    <a href="https://github.com/Mohit-Java-Caps" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-  </section>
+<section>
+  <h2>Projects</h2>
 
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('light-mode');
-    }
+  <div class="grid">
+    <div class="card">
+      <h3>URL Shortener Platform</h3>
+      <p>Production-ready REST backend with JWT authentication and analytics.</p>
+      <p><b>Tech:</b> Java, Spring Boot, Spring Security, JPA</p>
+    </div>
 
-    const projects = document.querySelectorAll('.project');
-    window.addEventListener('scroll', () => {
-      projects.forEach((el) => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight) {
-          el.style.opacity = 1;
-        }
-      });
-    });
-  </script>
+    <div class="card">
+      <h3>AI-Based Calorie Tracker</h3>
+      <p>Full-stack app integrating Gen-AI APIs for food detection and calorie estimation.</p>
+      <p><b>Tech:</b> Spring Boot, Angular, MongoDB, Gen-AI APIs</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="card">
+    Java, Spring Boot, Microservices, REST APIs, Angular, PostgreSQL, MySQL, MongoDB,
+    AWS (EC2, RDS, S3, Cognito), Docker, Jenkins, GitHub Actions,
+    Apache Kafka, Apache Spark, System Design, DSA
+  </div>
+</section>
+
+<section>
+  <h2>Certifications & Achievements</h2>
+  <ul class="card">
+    <li>AWS Cloud Practitioner</li>
+    <li>AWS AI Practitioner</li>
+    <li>Databricks Generative AI Associate Engineer</li>
+    <li>GitHub Copilot Certified</li>
+    <li>4⭐ LeetCode (800+ Problems)</li>
+    <li>Cognizant Awards: Raising the Bar, Doing the Right Things</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <b>B.Tech in Computer Science Engineering</b><br/>
+    Academy of Technology, Kolkata — <b>CGPA: 9.54</b>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mohit Kumar • Java Full Stack Engineer
+</footer>
+
 </body>
 </html>
