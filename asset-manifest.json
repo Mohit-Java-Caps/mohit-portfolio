@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mohit-portfolio/static/css/main.fc6de643.css",
+    "main.js": "/mohit-portfolio/static/js/main.b3ebebb6.js",
+    "index.html": "/mohit-portfolio/index.html",
+    "main.fc6de643.css.map": "/mohit-portfolio/static/css/main.fc6de643.css.map",
+    "main.b3ebebb6.js.map": "/mohit-portfolio/static/js/main.b3ebebb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc6de643.css",
+    "static/js/main.b3ebebb6.js"
+  ]
+}
