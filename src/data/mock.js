@@ -6,16 +6,16 @@ export const personal = {
   firstName: "Mohit",
   lastName: "Kumar",
   role: "Java Full Stack Engineer",
-  tagline: "Building scalable systems that process millions of records efficiently.",
+  tagline: "Building high-performance distributed systems at scale.",
   subTagline:
-    "2.5+ years engineering cloud-native microservices, distributed pipelines, and high-impact backend platforms.",
+    "Java Full stack Engineer specialising in scalable backend systems, cloud architecture and Gen-AI integrations.",
   location: "India · Working with NextEra Energy, USA",
   company: "Cognizant",
   client: "NextEra Energy, USA",
   email: "mohitlogin72@gmail.com",
   github: "https://github.com/Mohit-Java-Caps",
   linkedin: "https://www.linkedin.com/in/mohit-kumar-dev",
-  resumeUrl: "#",
+  resumeUrl: "https://github.com/Mohit-Java-Caps/mohit-portfolio/blob/main/Mohit_Kumar_Java_Developer_04042026_pdf.pdf",
 };
 
 export const navLinks = [
@@ -48,17 +48,17 @@ export const experiences = [
     company: "Cognizant",
     client: "NextEra Energy, USA",
     role: "Associate Full Stack Engineer",
-    period: "2022 — Present",
+    period: "Sept 2023 — Present",
     location: "Remote · India",
     summary:
       "Building distributed microservices and AWS event-driven data pipelines for one of the largest renewable-energy producers in the world.",
     bullets: [
-      "Architected microservices in Java + Spring Boot powering critical operational workflows.",
-      "Designed an AWS event-driven pipeline (S3 → SNS → SQS → ECS) processing 8,300+ files daily.",
-      "Implemented Apache Spark batch jobs for terabyte-scale analytical workloads.",
-      "Optimised PostgreSQL queries and indexes — 25% latency reduction on hot paths.",
-      "Right-sized AWS infrastructure, cutting monthly cloud spend by 15%.",
-      "Collaborated with Angular front-end teams to ship end-to-end features in production.",
+      "Designed and developed scalable microservices using Java and Spring Boot for enterprise-grade applications.",
+      "Built an event-driven AWS pipeline (S3 → SNS → SQS → ECS) processing 8,300+ files daily.",
+      "Developed Apache Spark batch jobs for large-scale distributed data processing.",
+      "Optimized PostgreSQL queries and indexing strategies, improving performance by 25%.",
+      "Reduced AWS infrastructure cost by 15% through resource optimization and tuning.",
+      "Collaborated with frontend teams to deliver full-stack features using Angular.",
     ],
     stack: [
       "Java",
