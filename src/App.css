@@ -9,11 +9,11 @@ html {
 
 /* Selection styling */
 ::selection {
-  background-color: rgba(37, 99, 235, 0.25);
+  background-color: rgba(21, 128, 82, 0.25);
   color: inherit;
 }
 .dark ::selection {
-  background-color: rgba(34, 211, 238, 0.30);
+  background-color: rgba(52, 211, 153, 0.30);
   color: #fff;
 }
 
@@ -37,7 +37,7 @@ html {
   background-clip: padding-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(37, 99, 235, 0.55);
+  background: rgba(21, 128, 82, 0.55);
   border: 2px solid transparent;
   background-clip: padding-box;
 }

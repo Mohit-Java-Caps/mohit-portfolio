@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0c0f"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none"/>
+  <g opacity="0.5" stroke="#1c2228" stroke-width="1">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="510" x2="1200" y2="510"/>
+    <line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <g font-family="'JetBrains Mono', 'Courier New', monospace">
+    <circle cx="132" cy="80" r="5" fill="#34d399"/>
+    <text x="150" y="85" font-size="18" letter-spacing="3" fill="#8a9199">SYSTEM ONLINE · INDIA</text>
+  </g>
+
+  <text x="120" y="300" font-family="'Space Grotesk','Arial',sans-serif" font-size="90" font-weight="700" fill="#f4f6f7">Mohit Kumar</text>
+  <text x="120" y="360" font-family="'Space Grotesk','Arial',sans-serif" font-size="42" font-weight="600" fill="#34d399">Java Full-Stack Engineer</text>
+  <text x="120" y="410" font-family="'Arial',sans-serif" font-size="26" fill="#b7bcc2">Building systems that survive beyond the happy path.</text>
+
+  <g font-family="'JetBrains Mono', monospace" font-size="18" fill="#8a9199" letter-spacing="2">
+    <text x="120" y="470">JAVA · SPRING BOOT · AWS · DISTRIBUTED SYSTEMS · DATA · AI</text>
+  </g>
+
+  <g font-family="'JetBrains Mono', monospace" font-size="16" fill="#5c6470">
+    <text x="120" y="560">25% QUERY PERF</text>
+    <text x="330" y="560">15% AWS COST</text>
+    <text x="520" y="560">8.3K+ FILES/DAY</text>
+    <text x="740" y="560">800+ DSA SOLVED</text>
+  </g>
+</svg>
