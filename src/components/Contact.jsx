@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Send, MapPin } from "lucide-react";
+import { Mail, Send, MapPin, Github, Linkedin, Code2 } from "lucide-react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
@@ -8,7 +8,7 @@ import { personal, socials } from "../data/mock";
 import ChapterHeader from "./ChapterHeader";
 import { fadeUp, viewportOnce } from "./motionVariants";
 
-const iconMap = { Mail };
+const iconMap = { Mail, Github, Linkedin, Code2 };
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", subject: "", message: "" });
@@ -36,7 +36,7 @@ const Contact = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-sm text-foreground/90">
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Mail className="h-4 w-4" />
+                  <Mail className="h-4 w-4" aria-hidden="true" />
                 </span>
                 <a href={`mailto:${personal.email}`} className="font-medium hover:text-primary">
                   {personal.email}
@@ -44,7 +44,7 @@ const Contact = () => {
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground/90">
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <MapPin className="h-4 w-4" />
+                  <MapPin className="h-4 w-4" aria-hidden="true" />
                 </span>
                 {personal.location}
               </li>
@@ -62,7 +62,7 @@ const Contact = () => {
                     aria-label={s.label}
                     className="inline-flex h-10 items-center gap-1.5 rounded-full border border-border bg-card px-4 font-mono text-xs text-foreground/90 transition hover:border-primary/50 hover:text-primary"
                   >
-                    {Icon && <Icon className="h-3.5 w-3.5" />} {s.label}
+                    {Icon && <Icon className="h-3.5 w-3.5" aria-hidden="true" />} {s.label}
                   </a>
                 );
               })}
@@ -101,7 +101,7 @@ const Contact = () => {
               <p className="text-xs text-muted-foreground">Opens your email client — nothing is stored.</p>
               <a href={mailtoHref()}>
                 <Button type="button" className="h-11 rounded-full bg-primary px-6 text-primary-foreground hover:bg-primary/90">
-                  <Send className="mr-2 h-4 w-4" /> Send message
+                  <Send className="mr-2 h-4 w-4" aria-hidden="true" /> Send message
                 </Button>
               </a>
             </div>

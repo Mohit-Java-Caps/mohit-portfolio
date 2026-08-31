@@ -59,16 +59,16 @@ const Hero = () => {
                 className="group h-11 rounded-full bg-primary px-6 text-primary-foreground hover:bg-primary/90"
               >
                 Enter system
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight aria-hidden="true" className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
               <a href={personal.resumeUrl} target="_blank" rel="noreferrer">
                 <Button variant="outline" className="h-11 rounded-full border-border px-6">
-                  <FileText className="mr-2 h-4 w-4" /> View resume
+                  <FileText aria-hidden="true" className="mr-2 h-4 w-4" /> View resume
                 </Button>
               </a>
               <a href={personal.github} target="_blank" rel="noreferrer" aria-label="GitHub">
                 <Button variant="outline" size="icon" className="h-11 w-11 rounded-full border-border">
-                  <Github className="h-4 w-4" />
+                  <Github className="h-4 w-4" aria-hidden="true" />
                 </Button>
               </a>
             </motion.div>

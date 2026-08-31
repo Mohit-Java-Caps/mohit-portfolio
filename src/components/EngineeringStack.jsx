@@ -36,6 +36,7 @@ const EngineeringStack = () => {
                     {layer.title}
                   </span>
                   <ChevronDown
+                    aria-hidden="true"
                     className={`h-4 w-4 flex-none text-muted-foreground transition-transform ${isOpen ? "rotate-180" : ""}`}
                   />
                 </button>

@@ -45,7 +45,7 @@ const CaseStudyCard = ({ study, defaultOpen }) => {
           className="mt-5 inline-flex items-center gap-1.5 font-mono text-xs font-semibold uppercase tracking-wide text-primary"
         >
           {open ? "Hide incident report" : "View incident report"}
-          <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
+          <ChevronDown aria-hidden="true" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
         </button>
 
         <AnimatePresence initial={false}>
@@ -106,7 +106,7 @@ const CaseStudyCard = ({ study, defaultOpen }) => {
                       rel="noreferrer"
                       className="inline-flex items-center gap-1.5 font-mono text-xs text-primary hover:underline"
                     >
-                      <Github className="h-3.5 w-3.5" /> Source
+                      <Github aria-hidden="true" className="h-3.5 w-3.5" /> Source
                     </a>
                   )}
                 </div>

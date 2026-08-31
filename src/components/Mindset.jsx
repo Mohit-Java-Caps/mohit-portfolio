@@ -18,7 +18,7 @@ const PrincipleCard = ({ principle }) => {
     >
       <div className="flex items-start justify-between gap-3">
         <h3 className="font-display text-lg font-semibold text-foreground">{principle.title}</h3>
-        <Plus className={`h-4 w-4 flex-none text-primary transition-transform ${open ? "rotate-45" : ""}`} />
+        <Plus aria-hidden="true" className={`h-4 w-4 flex-none text-primary transition-transform ${open ? "rotate-45" : ""}`} />
       </div>
       <AnimatePresence initial={false}>
         {open && (

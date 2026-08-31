@@ -50,7 +50,7 @@ const Footer = () => {
               aria-label="GitHub"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-foreground/80 transition hover:border-primary/50 hover:text-primary"
             >
-              <Github className="h-4 w-4" />
+              <Github className="h-4 w-4" aria-hidden="true" />
             </a>
             <a
               href={personal.linkedin}
@@ -59,21 +59,21 @@ const Footer = () => {
               aria-label="LinkedIn"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-foreground/80 transition hover:border-primary/50 hover:text-primary"
             >
-              <Linkedin className="h-4 w-4" />
+              <Linkedin className="h-4 w-4" aria-hidden="true" />
             </a>
             <a
               href={`mailto:${personal.email}`}
               aria-label="Email"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-foreground/80 transition hover:border-primary/50 hover:text-primary"
             >
-              <Mail className="h-4 w-4" />
+              <Mail className="h-4 w-4" aria-hidden="true" />
             </a>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               aria-label="Back to top"
               className="ml-2 inline-flex h-9 items-center gap-1.5 rounded-full border border-border bg-card px-4 text-xs font-medium text-foreground/80 transition hover:border-primary/50 hover:text-primary"
             >
-              <ArrowUp className="h-3.5 w-3.5" /> Top
+              <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" /> Top
             </button>
           </div>
         </div>

@@ -22,7 +22,7 @@ const Capabilities = () => (
         variants={fadeUp}
         className="mt-10 flex items-start gap-4 rounded-2xl border border-primary/30 bg-primary/5 p-6"
       >
-        <Trophy className="mt-0.5 h-5 w-5 flex-none text-primary" />
+        <Trophy aria-hidden="true" className="mt-0.5 h-5 w-5 flex-none text-primary" />
         <div>
           <p className="font-mono text-xs uppercase tracking-wide text-primary">{cognizantAward.date} · Cognizant Award</p>
           <h3 className="font-display mt-1 text-lg font-semibold text-foreground">{cognizantAward.title}</h3>

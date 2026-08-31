@@ -8,6 +8,12 @@ html, body, #root {
   height: 100%;
 }
 
+/* Reserve space for the fixed navbar so scrolled-to and keyboard-focused
+   elements never land hidden behind it (WCAG 2.2 Focus Not Obscured). */
+html {
+  scroll-padding-top: 88px;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

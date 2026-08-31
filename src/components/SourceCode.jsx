@@ -34,9 +34,12 @@ const SourceCode = () => (
             <div>
               <div className="flex items-center justify-between gap-3">
                 <span className="flex items-center gap-2 font-mono text-sm font-semibold text-foreground">
-                  <Github className="h-4 w-4 text-muted-foreground" /> {repo.name}
+                  <Github className="h-4 w-4 text-muted-foreground" aria-hidden="true" /> {repo.name}
                 </span>
-                <ArrowUpRight className="h-4 w-4 flex-none text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary" />
+                <ArrowUpRight
+                  aria-hidden="true"
+                  className="h-4 w-4 flex-none text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary"
+                />
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{repo.blurb}</p>
             </div>

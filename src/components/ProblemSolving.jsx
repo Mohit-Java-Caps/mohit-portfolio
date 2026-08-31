@@ -48,7 +48,7 @@ const ProblemSolving = () => (
           rel="noreferrer"
           className="inline-flex items-center gap-1.5 rounded-full border border-border px-4 py-2 font-mono text-xs text-foreground hover:border-primary/50"
         >
-          LeetCode profile <ExternalLink className="h-3 w-3" />
+          LeetCode profile <ExternalLink aria-hidden="true" className="h-3 w-3" />
         </a>
         <a
           href={personal.github}
@@ -56,7 +56,7 @@ const ProblemSolving = () => (
           rel="noreferrer"
           className="inline-flex items-center gap-1.5 rounded-full border border-border px-4 py-2 font-mono text-xs text-foreground hover:border-primary/50"
         >
-          GitHub <ExternalLink className="h-3 w-3" />
+          GitHub <ExternalLink aria-hidden="true" className="h-3 w-3" />
         </a>
       </div>
     </div>
