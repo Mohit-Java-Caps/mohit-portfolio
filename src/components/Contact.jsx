@@ -50,7 +50,7 @@ const Contact = () => {
               </li>
             </ul>
 
-            <div className="mt-8 flex gap-2">
+            <div className="mt-8 flex flex-wrap gap-2">
               {socials.map((s) => {
                 const Icon = iconMap[s.icon];
                 return (

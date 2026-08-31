@@ -40,13 +40,11 @@ const ChapterRail = () => {
             aria-current={isActive}
             className="group relative flex h-6 w-6 items-center justify-center"
           >
-            <span
-              className={`font-mono text-[10px] transition-opacity ${
-                isActive ? "text-primary opacity-100" : "text-muted-foreground opacity-0 group-hover:opacity-100"
-              } absolute -right-8 whitespace-nowrap`}
-            >
-              {c.index}
-            </span>
+            {isActive && (
+              <span className="absolute -right-8 whitespace-nowrap font-mono text-[10px] text-primary">
+                {c.index}
+              </span>
+            )}
             <span
               className={`block rounded-full transition-all ${
                 isActive ? "h-2.5 w-2.5 bg-primary" : "h-1.5 w-1.5 bg-border group-hover:bg-primary/60"
