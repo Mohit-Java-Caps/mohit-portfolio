@@ -22,6 +22,7 @@ export const personal = {
   leetcode: "https://leetcode.com/u/Mohit_72/",
   resumeUrl: `${process.env.PUBLIC_URL || ""}/Mohit_Kumar_Java_FullStack_Engineer_23Jul2026_2.pdf`,
   resumeFileName: "Mohit_Kumar_Java_FullStack_Engineer.pdf",
+  photo: `${process.env.PUBLIC_URL || ""}/mohit-kumar.jpg`,
 };
 
 export const navLinks = [

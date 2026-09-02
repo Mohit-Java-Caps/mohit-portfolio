@@ -25,15 +25,19 @@ const Hero = () => {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
           <motion.div initial="hidden" animate="show" variants={staggerContainer()}>
-            <motion.div
-              variants={fadeUpSm}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 font-mono text-xs text-muted-foreground backdrop-blur"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+            <motion.div variants={fadeUpSm} className="flex items-center gap-3">
+              <span className="relative h-14 w-14 flex-none overflow-hidden rounded-full border-2 border-primary/40">
+                <img src={personal.photo} alt={personal.name} className="h-full w-full object-cover" />
+                <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-background bg-primary" />
               </span>
-              SYSTEM ONLINE · {personal.location}
+
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 font-mono text-xs text-muted-foreground backdrop-blur">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/60" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                </span>
+                SYSTEM ONLINE · {personal.location}
+              </span>
             </motion.div>
 
             <motion.h1
