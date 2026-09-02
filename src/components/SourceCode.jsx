@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Github, ArrowUpRight } from "lucide-react";
 import ChapterHeader from "./ChapterHeader";
 import { sourceRepos } from "../data/mock";
-import { fadeUp, staggerContainer, viewportOnce } from "./motionVariants";
+import { fadeUp, staggerContainer, viewportOnce, hoverLift } from "./motionVariants";
 
 const SourceCode = () => (
   <section id="source" className="relative py-24 sm:py-32">
@@ -29,6 +29,7 @@ const SourceCode = () => (
             target="_blank"
             rel="noreferrer"
             variants={fadeUp}
+            whileHover={hoverLift}
             className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
           >
             <div>

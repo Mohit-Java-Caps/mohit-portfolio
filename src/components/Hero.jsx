@@ -6,6 +6,8 @@ import { useMode } from "../context/ModeContext";
 import { Button } from "./ui/button";
 import Grid from "./Grid";
 import SystemDiagram from "./SystemDiagram";
+import MagneticButton from "./MagneticButton";
+import CountUp from "./CountUp";
 import { fadeUp, fadeUpSm, staggerContainer, EASE } from "./motionVariants";
 
 const Hero = () => {
@@ -54,13 +56,15 @@ const Hero = () => {
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center gap-3">
-              <Button
-                onClick={handleEnterSystem}
-                className="group h-11 rounded-full bg-primary px-6 text-primary-foreground hover:bg-primary/90"
-              >
-                Enter system
-                <ArrowRight aria-hidden="true" className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </Button>
+              <MagneticButton>
+                <Button
+                  onClick={handleEnterSystem}
+                  className="group h-11 rounded-full bg-primary px-6 text-primary-foreground hover:bg-primary/90"
+                >
+                  Enter system
+                  <ArrowRight aria-hidden="true" className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </Button>
+              </MagneticButton>
               <a href={personal.resumeUrl} target="_blank" rel="noreferrer">
                 <Button variant="outline" className="h-11 rounded-full border-border px-6">
                   <FileText aria-hidden="true" className="mr-2 h-4 w-4" /> View resume
@@ -77,11 +81,13 @@ const Hero = () => {
               {heroStats.map((s) => (
                 <motion.div
                   key={s.label}
-                  whileHover={{ y: -3 }}
-                  transition={{ duration: 0.2, ease: EASE }}
+                  whileHover={{ y: -4, scale: 1.02, borderColor: "hsl(var(--primary) / 0.4)" }}
+                  transition={{ duration: 0.25, ease: EASE }}
                   className="rounded-xl border border-border bg-card/60 p-4 backdrop-blur"
                 >
-                  <p className="font-display text-2xl font-semibold text-foreground">{s.value}</p>
+                  <p className="font-display text-2xl font-semibold text-foreground">
+                    <CountUp value={s.value} />
+                  </p>
                   <p className="mt-1 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">{s.label}</p>
                 </motion.div>
               ))}

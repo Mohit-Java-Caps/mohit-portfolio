@@ -3,13 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Plus } from "lucide-react";
 import ChapterHeader from "./ChapterHeader";
 import { principles } from "../data/mock";
-import { fadeUp, viewportOnce, EASE } from "./motionVariants";
+import { fadeUp, viewportOnce, hoverLift, EASE } from "./motionVariants";
 
 const PrincipleCard = ({ principle }) => {
   const [open, setOpen] = useState(false);
   return (
     <motion.button
       variants={fadeUp}
+      whileHover={hoverLift}
       onClick={() => setOpen((o) => !o)}
       aria-expanded={open}
       className={`text-left rounded-2xl border p-6 transition-colors ${

@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Github } from "lucide-react";
 import ChapterHeader from "./ChapterHeader";
 import PipelineDiagram from "./PipelineDiagram";
+import CountUp from "./CountUp";
 import { caseStudies } from "../data/mock";
-import { fadeUp, viewportOnce, EASE } from "./motionVariants";
+import { fadeUp, viewportOnce, hoverLift, EASE } from "./motionVariants";
 
 const Row = ({ label, children }) => (
   <div className="grid gap-1 sm:grid-cols-[110px_1fr] sm:gap-4">
@@ -22,6 +23,7 @@ const CaseStudyCard = ({ study, defaultOpen }) => {
       whileInView="show"
       viewport={viewportOnce}
       variants={fadeUp}
+      whileHover={hoverLift}
       className={`overflow-hidden rounded-2xl border bg-card ${
         study.flagship ? "border-primary/40" : "border-border"
       }`}
@@ -81,7 +83,9 @@ const CaseStudyCard = ({ study, defaultOpen }) => {
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                       {study.result.map((r) => (
                         <div key={r.label} className="rounded-xl border border-border bg-secondary/50 p-3">
-                          <p className="font-display text-lg font-semibold text-foreground">{r.value}</p>
+                          <p className="font-display text-lg font-semibold text-foreground">
+                            <CountUp value={r.value} />
+                          </p>
                           <p className="mt-0.5 font-mono text-[10px] uppercase tracking-wide text-muted-foreground">
                             {r.label}
                           </p>
