@@ -69,7 +69,7 @@ const FloatingChat = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.98 }}
             transition={{ duration: 0.25, ease: EASE }}
-            className="fixed bottom-24 right-5 z-50 flex h-[520px] w-[min(92vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-black/40"
+            className="fixed bottom-24 right-5 z-50 flex h-[min(520px,calc(100vh-140px))] w-[min(92vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-black/40"
           >
             <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-3">
               <div className="flex items-center gap-2.5">
