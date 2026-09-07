@@ -190,7 +190,7 @@ export const ragStages = [
 ];
 
 export const ragCapabilityNote =
-  "This chapter demonstrates RAG/GenAI literacy — built through the Databricks GenAI Associate and AWS AI Practitioner certifications, and shipped concretely in the AI-Based Calorie Tracker's food-detection pipeline below. It is not a claim of a production RAG system at Cognizant.";
+  "This isn't just a diagram — the chat widget in the corner of this site is a real, working version of this exact pipeline, retrieving from this portfolio's own verified data before generating an answer. Built on RAG/GenAI literacy from the Databricks GenAI Associate and AWS AI Practitioner certifications. It is not a claim of a production RAG system at Cognizant — that distinction stays accurate.";
 
 export const ragTech = ["AWS Bedrock", "RAG", "Embeddings", "Vector DB", "MLflow", "Databricks", "Prompt Engineering"];
 
@@ -287,6 +287,12 @@ export const cognizantAward = {
 
 // Chapter — Source Code. Blurbs summarise each repo's own README, not invented.
 export const sourceRepos = [
+  {
+    name: "ask-my-portfolio",
+    url: "https://github.com/Mohit-Java-Caps/ask-my-portfolio",
+    language: "JavaScript",
+    blurb: "A RAG chatbot embedded in this site (bottom-right) — TF-IDF retrieval over this portfolio's own verified data, Groq for generation. Ask it something.",
+  },
   {
     name: "microservices-architecture-patterns",
     url: "https://github.com/mohit-java-caps/microservices-architecture-patterns",

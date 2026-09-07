@@ -18,6 +18,7 @@ import Capabilities from "./components/Capabilities";
 import SourceCode from "./components/SourceCode";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FloatingChat from "./components/FloatingChat";
 import { Toaster } from "./components/ui/toaster";
 
 const Portfolio = () => (
@@ -39,6 +40,7 @@ const Portfolio = () => (
     </main>
     <Footer />
     <Toaster />
+    <FloatingChat />
   </div>
 );
 
